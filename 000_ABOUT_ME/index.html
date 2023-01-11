@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>👋 About me</title>
+    <meta charset="utf-8" />
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: "Droid Serif";
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Yanone Kaffeesatz";
+        font-weight: normal;
+      }
+      .remark-code,
+      .remark-inline-code {
+        font-family: "Ubuntu Mono";
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# 👋 Hello
+
+---
+
+# Agenda
+
+1. Who am I?
+2. My experience and interests
+3. Code example
+4. Where can I be found?
+
+---
+
+# Who am I?
+
+![profile_picture](./assets/profile_picture.jpg "Profile picture")
+
+My name is Kacper.
+I'm a Frontend Developer with a passion for aesthetics and work where visual aspects are important.
+
+I have been working in IT since 2020, creating web and mobile applications in React, React Native and NEXT.js.
+
+From 2022 I’m working as a Frontend Developer in a polish software house called Apptension.
+
+---
+
+# My experience and interests
+
+Experience:
+ - Since 2020 in Web Development
+ - Since 2021 in React & TypeScript
+ - Since 2022 in React Native and NEXT.js
+
+Interests:
+ - UX & UI
+ - LEGO
+ - Swimming
+ - Mountains
+---
+
+# Code example
+
+```TypeScript
+import { useState } from "react";
+
+const App = () => {
+  const [counter, setCounter] = useState(0);
+
+  const addition = () => {
+    setCounter((prevState) => prevState + 1);
+  };
+
+  const subtraction = () => {
+    setCounter((prevState) => prevState - 1);
+  };
+
+  return (
+    <div className="App">
+      <h1>Counter: {counter}</h1>
+      <div>
+        <button onClick={addition}>Add</button>
+        <button onClick={subtraction}>Subtract</button>
+      </div>
+    </div>
+  );
+};
+
+export default App;
+```
+
+---
+
+# Where can I be found?
+
+ - LinkedIn: [https://www.linkedin.com/in/kacperadler](https://www.linkedin.com/in/kacperadler)
+ - GitHub: [https://github.com/kacperadler](https://github.com/kacperadler)
+
+See you in the future 👋
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
